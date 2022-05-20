@@ -1,0 +1,36 @@
+.how-content {
+  width: 60%;
+  margin: 5rem auto;
+  text-align: left;
+}
+
+.how-content img {
+  width: 100px;
+  height: 100px;
+}
+
+.how-content h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--textPrimaryColor);
+}
+
+.how-collapse-content {
+  margin-bottom: 2rem;
+}
+
+.how-content .how-head {
+  padding: 1rem 0;
+}
+
+.how-head svg {
+  color: var(--accentColor);
+  margin-right: 1rem;
+}
+
+@media only screen and (max-width: 450px) {
+  .how-content {
+    width: 90%;
+    margin-top: 1rem;
+  }
+}

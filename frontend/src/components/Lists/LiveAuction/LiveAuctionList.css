@@ -1,0 +1,46 @@
+@import url('../../../utils/Colors.css');
+
+.hotbid-list {
+    padding: 1rem 3rem;
+}
+
+.hotbid-list h1 {
+    color: var(--textPrimaryColor);
+    font-weight: 700;
+    text-align: left;
+    font-size: 2.2rem;
+    margin: 0;
+}
+
+.hotbid-list h1 > span img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    vertical-align: unset;
+}
+
+.hotbid-item-list {
+    padding: 0;
+    margin: 0 -12px;
+}
+
+.ant-carousel .slick-slider button {
+    color: white;
+}
+
+@media only screen and (max-width: 450px) {
+    .hotbid-list {
+        padding: 12px;
+    }    
+
+    .hotbid-list h1 {
+        font-size: 1.5rem;
+    }
+
+    .hotbid-list h1 > span img {
+        width: 20px;
+        height: 20px;
+        object-fit: cover;
+        vertical-align: unset;
+    }    
+}

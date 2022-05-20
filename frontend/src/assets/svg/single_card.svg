@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="311" height="460" viewBox="0 0 311 460">
+  <defs>
+    <filter id="Rectangle_1" x="0" y="0" width="311" height="460" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Component_3_1" data-name="Component 3 – 1" transform="translate(9 6)">
+    <g transform="matrix(1, 0, 0, 1, -9, -6)" filter="url(#Rectangle_1)">
+      <rect id="Rectangle_1-2" data-name="Rectangle 1" width="293" height="442" rx="24" transform="translate(9 6)" fill="#fff"/>
+    </g>
+    <rect id="Rectangle_3" data-name="Rectangle 3" width="198" height="161" rx="24" transform="translate(48 30)" fill="#00dcd5"/>
+    <g id="Component_2_1" data-name="Component 2 – 1" transform="translate(20 221)">
+      <rect id="Rectangle_4" data-name="Rectangle 4" width="214" height="35" rx="17.5" transform="translate(0 60)" fill="#e7e7e7"/>
+      <rect id="Rectangle_5" data-name="Rectangle 5" width="246" height="16" rx="8" transform="translate(0 137)" fill="#e7e7e7"/>
+      <rect id="Rectangle_6" data-name="Rectangle 6" width="246" height="16" rx="8" transform="translate(0 108)" fill="#e7e7e7"/>
+      <rect id="Rectangle_7" data-name="Rectangle 7" width="82" height="29" rx="14.5" transform="translate(0 166)" fill="#e7e7e7"/>
+      <g id="Component_1_1" data-name="Component 1 – 1" transform="translate(1)">
+        <g id="Ellipse_1" data-name="Ellipse 1" fill="#e7e7e7" stroke="#d9d9d9" stroke-width="1">
+          <circle cx="20" cy="20" r="20" stroke="none"/>
+          <circle cx="20" cy="20" r="19.5" fill="none"/>
+        </g>
+        <g id="Ellipse_2" data-name="Ellipse 2" transform="translate(14)" fill="#e7e7e7" stroke="#d9d9d9" stroke-width="1">
+          <circle cx="20" cy="20" r="20" stroke="none"/>
+          <circle cx="20" cy="20" r="19.5" fill="none"/>
+        </g>
+        <g id="Ellipse_3" data-name="Ellipse 3" transform="translate(27)" fill="#e7e7e7" stroke="#d9d9d9" stroke-width="1">
+          <circle cx="20" cy="20" r="20" stroke="none"/>
+          <circle cx="20" cy="20" r="19.5" fill="none"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

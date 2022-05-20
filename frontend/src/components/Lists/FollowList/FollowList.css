@@ -1,0 +1,13 @@
+.follow-list {
+    
+}
+
+.desktop-follow-drawer {
+    display: none;
+}
+
+@media only screen and (max-width: 450px) {
+    .ant-drawer-content-wrapper {
+        width: 300px;
+    }
+} 

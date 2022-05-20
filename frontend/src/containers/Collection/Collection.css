@@ -1,0 +1,14 @@
+.my-items {
+  padding-top: 70px;
+  padding-bottom: 1rem;
+}
+
+@media only screen and (max-width: 450px) {
+  .my-items {
+    padding-top: 65px;
+  }
+}
+
+.ant-tabs-content {
+  padding-bottom: 60px;
+}

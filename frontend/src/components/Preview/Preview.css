@@ -1,0 +1,23 @@
+.preview-card {
+    /* padding: 1rem; */
+    /* border: 1px solid var(--grayAccent); */
+    border-radius: 1rem;
+    text-align: left;
+    position: sticky;
+    padding-top: 5%;
+    width: 280px;
+    top: 2.3rem;
+}
+
+.preview-card .preview-tag {
+    padding: 0 1rem;
+    color: var(--textPrimaryColor);
+}
+
+
+
+@media only screen and (max-width: 450px) {
+    .preview-card {
+        display: none;
+    }
+}

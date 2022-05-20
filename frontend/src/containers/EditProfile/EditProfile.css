@@ -1,0 +1,212 @@
+.edit-profile {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 120px;
+    text-align: left;
+}
+
+#my-file-edit {
+    display: none;
+}
+
+.edit-profile-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.edit-profile-header svg {
+    border: 1px solid var(--grayAccent);
+    padding: 8px;
+    font-size: 2rem;
+    border-radius: 8rem;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.edit-profile h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--textPrimaryColor);
+    margin: 0;
+}
+.edit-profile .edit-profile-para {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--textLightColor);
+    width: 80%;
+}
+
+.edit-profile .edit-user-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.edit-user-box img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8rem;
+    margin-right: 4rem;
+}
+.edit-user-box div {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8rem;
+    margin-right: 4rem;
+}
+
+.edit-user-box button {
+    background: var(--buttonSecondaryColor);
+    border: none;
+    border-radius: 8rem;
+    min-width: 150px;
+    height: 40px;
+    color: var(--buttonSecondaryTextColor);
+    font-size: 1rem;
+    font-weight: 700;
+    outline: none;
+    cursor: pointer;
+}
+
+.edit-user-box .edit-user-info p {
+    padding-top: 8px;
+    color: var(--textLightColor);
+    font-weight: 500;
+    font-size: .9rem;
+    width: 100%;
+}
+
+.edit-form {
+    margin-top: 2rem;
+}
+
+.edit-form h3 {
+    margin: 0;
+    margin-left: 8px;
+    color: var(--textPrimaryColor);
+    font-weight: 700;
+}
+
+.edit-form p {
+    margin: 0 8px;
+    font-weight: 500;
+    color: var(--textLightColor);
+}
+
+.edit-form .two-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.edit-form .two-item input {
+    width: 90%;
+    border-radius: 8rem;
+    padding: 8px 1rem;
+    font-size: 1rem;
+}
+
+.edit-form textarea {
+    border-radius: 1rem;
+    resize: none;
+    min-height: 150px;
+    font-size: 1rem;
+    width: 95%;
+    border: none;
+    color: var(--textPrimaryColor);
+}
+.edit-form input {
+    border-radius: 8rem;
+    font-size: 1rem;
+    padding: 8px 1rem;
+    width: 95%;
+    border: none;
+    color: var(--textPrimaryColor);
+}
+
+.edit-form .two-item .ant-form-item {
+    width: 100%;
+    padding-bottom: 1rem;
+}
+
+.edit-form .ant-form-item {
+    padding-bottom: 1rem;
+}
+
+.edit-form a {
+    background: var(--buttonSecondaryColor);
+    border: none;
+    border-radius: 8rem;
+    min-width: 150px;
+    color: var(--buttonSecondaryTextColor);
+    padding: 8px 1rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+    outline: none;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.edit-form .submit-button {
+    background: var(--buttonColor);
+    border: none;
+    border-radius: 8rem;
+    min-width: 250px;
+    height: 50px;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    margin-top: 3rem;
+}
+
+.edit-form .verified-box {
+    width: 60%;
+}
+
+@media only screen and (max-width: 450px) {
+    .edit-profile {
+        width: 95%;
+        margin: 0 auto;
+        padding-top: 80px;
+        padding-bottom: 0;
+    }
+
+    .edit-profile .edit-user-box {
+        align-items: center;
+    }
+    .edit-profile .edit-user-box p {
+        margin: 0;
+    }
+    .edit-profile .edit-profile-para {
+        width: 100%;
+    }
+
+    .edit-form .two-item {
+        flex-flow: column;
+    }
+
+    .edit-form .two-item input {
+        width: 100%;
+    }
+
+    .edit-form .two-item .ant-form-item {
+        padding-bottom: 0;
+    }
+
+    .edit-form .ant-form-item {
+        padding-bottom: 0;
+    }
+
+    .edit-form .two-item .verified-box {
+        width: 100%;
+    }
+
+    .edit-form .submit-button {
+        width: 100%;
+        margin-top: 2rem;
+    }
+}

@@ -1,0 +1,32 @@
+.empty-box {
+  min-height: 300px;
+  margin: 2rem 0;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.empty-box button {
+  background: var(--buttonColor);
+  color: white;
+  border-radius: 8rem;
+  width: 12rem;
+  height: 3rem;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.empty-box-content {
+  max-width: 250px;
+}
+
+.empty-box-content h2 {
+  color: var(--textPrimaryColor);
+}
+
+.empty-box h3 {
+  color: var(--textLightColor);
+}

@@ -1,0 +1,69 @@
+@import url('../../../utils/Colors.css');
+
+.seller-list {
+    padding: 1rem 3rem;
+    padding-top: 2rem;
+}
+
+.seller-list h1 {
+    color: var(--textPrimaryColor);
+    font-weight: 700;
+    text-align: left;
+    font-size: 2.2rem;
+    margin: 0;
+}
+
+.seller-item-list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0;
+    margin: 0 -1rem;
+    overflow-x: scroll;
+}
+
+.seller-list ::-webkit-scrollbar {
+    height: 6px;
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+.seller-list ::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0,0,0,.2);
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+
+.seller-list-title-seller {
+    display: flex;
+    align-items: center;
+    display: inline-block;
+    margin: 0 12px;
+    cursor: pointer;
+}
+.seller-list-title-seller span {
+    color: var(--textLightColor);
+}
+.seller-list-title-day {
+    display: flex;
+    align-items: center;
+    display: inline-block;
+    margin: 0 12px;
+    cursor: pointer;
+}
+.seller-list-title-day span {
+    color: var(--textLightColor);
+}
+
+@media only screen and (max-width: 450px) {
+    .seller-list {
+        padding: 1rem 12px;
+    }
+
+    .seller-list .seller-item-list {
+        margin: 0 -12px;
+    }
+
+    .seller-list h1 {
+        font-size: 1.5rem;
+    }
+}

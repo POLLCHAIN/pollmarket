@@ -1,0 +1,222 @@
+@import url("../../utils/Colors.css");
+
+.collectible-item {
+  border: 1px solid var(--lightGrayColor);
+  border-radius: 1rem;
+  /* padding: 1.5rem; */
+  margin: 12px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.08);
+  background: var(--backgroundWhiteColor);
+  flex: 0 1 300px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.collectible-footer .collectible-content .name-text {
+  font-size: 1rem;
+}
+
+.collectible-main-content {
+  padding: 1rem;
+  padding-top: 0;
+}
+
+.collectible-item-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.collectible-more-icon {
+  border: 1px solid transparent;
+  border-radius: 8rem;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 100;
+}
+
+.collectible-more-icon svg {
+  color: var(--grayColor);
+  font-size: 1.5rem;
+}
+
+.collectible-more-icon:hover {
+  background: var(--lightGrayColor);
+  border: 1px solid var(--lightGrayColor);
+  cursor: pointer;
+}
+
+.collectible-item .collectible-preview {
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--lightGrayColor);
+  height: 240px;  
+  z-index: 120;
+  cursor: pointer;
+}
+
+.collectible-item .collectible-preview .auction-time {
+  position: absolute;
+  z-index: 150;
+  top: 10px;
+  right: 5px;
+}
+.collectible-item .collectible-preview .auction-time button{
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  user-select: none;
+  height: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  border-radius: 10px;
+  border: 3px solid transparent;
+  background: rgb(255, 255, 255);
+  color: rgb(4, 4, 5);
+  margin: 2px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.collectible-item .collectible-preview .auction-time button > span {
+  color: var(--textLightColor);
+  padding-left: 8px;
+}
+.collectible-item .collectible-preview .auction-time button > span > img {
+  width: 12px;
+  height: 12px;
+  top: -1px;
+  display: flex;
+}
+
+.collectible-item .collectible-preview .auction-time button::before {
+  content: "";
+  position: absolute;
+  inset: 0px;
+  z-index: -1;
+  margin: -4px;
+  border-radius: 10px;
+  background: linear-gradient(to right, rgb(12, 80, 255) 0%, rgb(12, 80, 255) 24%, rgb(91, 157, 255) 55.73%, rgb(255, 116, 241) 75%, rgb(255, 116, 241) 100%);
+}
+
+.collectible-item-heart {
+  display: flex;
+  align-items: center;
+}
+
+.collectible-item-heart p {
+  margin: 0;
+  font-weight: 600;
+  color: var(--textLightColor);
+}
+
+.collectible-item .collectible-preview img {
+  object-fit: cover;
+  border-radius: 12px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.collectible-item .collectible-footer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  text-align: left;
+  margin-top: 1rem;
+}
+
+.collectible-item .collectible-footer h2 {
+  margin: 0;
+  color: var(--textPrimaryColor);
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  position: relative;
+  z-index: 100;
+}
+.collectible-item .collectible-footer h3 {
+  margin: 0;
+  color: var(--textPrimaryColor);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+.collectible-item .collectible-footer p {
+  margin: 0;
+  color: var(--textLightColor);
+  font-weight: 700;
+}
+.collectible-item .collectible-footer p > span {
+  margin: 0;
+  color: var(--primaryColor);
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.collectible-footer .collectible-like {
+  display: flex;
+  align-items: center;
+}
+
+.collectible-item-heart svg {
+  margin-right: 4px;
+  font-size: 1.3rem;
+  margin-top: 3px;
+}
+
+.collectible-footer .collectible-content h3 > span {
+  color: var(--textLightColor);
+}
+
+.collectible-multi-cards1 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 1rem;
+  right: 0;
+  bottom: 0.7%;
+  border: 1px solid var(--lightGrayColor);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
+}
+.collectible-multi-cards2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 1rem;
+  right: 0;
+  bottom: 1.8%;
+  border: 1px solid var(--lightGrayColor);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* Preview Card */
+.collectible-item .collectible-preview .preview-image {
+  height: 100%;
+  height: 240px;
+}
+
+.react-thumbnail-generator {
+  display: none !important;
+}
+
+.video-preview-svg {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 8px;
+  color: var(--textWhiteColor);
+}

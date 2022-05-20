@@ -1,0 +1,19 @@
+.main-filter {
+}
+
+.main-filter button {
+    background: transparent;
+    border: 1px solid var(--lightGrayColor);
+    color: var(--textPrimaryColor);
+    background: var(--backgroundColor);
+    margin-top: 4px;
+    padding: 0 2rem;
+    height: 45px;
+    border-radius: 3rem;
+    font-size: 1rem;
+    font-weight: 700;
+    width: 175px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, .1);
+}

@@ -1,0 +1,90 @@
+.single-form {
+  padding: 1rem 0;
+}
+
+.single-form h3 {
+  font-weight: 700;
+  color: var(--textPrimaryColor);
+  font-size: 1rem;
+}
+
+.single-multiple-copy {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.royalti-input {
+  width: 100%;
+}
+.copy-input {
+  width: 100%;
+}
+
+.single-form h3 > span {
+  color: var(--grayAccent);
+  font-weight: 700;
+}
+
+.single-form .input-group {
+  display: flex;
+}
+
+.single-form input {
+  border-radius: 8rem;
+  padding: 8px 1rem;
+  background: var(--backgroundWhiteColor);
+  color: var(--textPrimaryColor);
+  border: 1px solid var(--lightGrayColor);
+}
+
+.single-form-button {
+  padding: 0 2rem;
+  height: 40px;
+  outline: none;
+  color: white;
+  background: var(--buttonColor);
+  border: none;
+  border-radius: 8rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-weight: 700;
+}
+
+.select-category {
+  width: 100%;
+  margin-bottom: 8px;
+  border-radius: 8rem;
+  padding: 8px 1rem;
+  background: var(--backgroundWhiteColor);
+  color: var(--textPrimaryColor);
+  border: 1px solid var(--lightGrayColor);
+  outline: none;
+  background-color: var(--backgroundWhiteColor);
+}
+
+.property-add-button {
+  background: transparent;
+  border: none;
+  vertical-align: middle;
+}
+.property-add-button svg {
+  font-size: 26px;
+  border-radius: 8rem;
+  border: 2px solid var(--textPrimaryColor);
+  padding: 3px;
+}
+
+.property-remove-button {
+  background: transparent;
+  border: none;
+  vertical-align: middle;
+}
+.property-remove-button span{
+  font-size: 26px;
+  color: var(--textPrimaryColor);
+}
+
+
+@media only screen and (max-width: 450px) {
+}

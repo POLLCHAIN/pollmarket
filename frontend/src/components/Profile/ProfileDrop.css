@@ -1,0 +1,112 @@
+.profile-drop {
+    background: var(--backgroundWhiteColor);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, .2);
+    min-width: 300px;
+    min-height: 350px;
+}
+
+.profile-drop h4 {
+    color: var(--textPrimaryColor);
+}
+
+.profile-drop p {
+    color: var(--textLightColor);
+}
+
+.profile-drop .profile-drop-header {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.profile-drop .profile-drop-account .profile-drop-header {
+    margin-bottom: 0;
+}
+
+.profile-drop .profile-drop-manage {
+    border-bottom: 1px solid var(--lightGrayColor);
+    padding: 1rem 0;
+    margin-bottom: 8px;
+    display: flex;
+}
+
+.profile-drop .profile-drop-manage a {
+    text-align: center;
+    border-radius: 8rem;
+    background: var(--buttonSecondaryColor);
+    color: var(--buttonSecondaryTextColor);
+    padding: 8px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+
+
+
+
+
+.profile-drop-header-context {
+    margin-left: 1rem;
+}
+
+.profile-drop-header-context h4 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 1rem;
+}
+.profile-drop-header-context p {
+    margin: 0;
+    max-width: 200px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.profile-drop-header-context p > span {
+    font-weight: 700;
+    color: var(--textPrimaryColor);
+}
+
+.profile-drop .profile-drop-menu {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.profile-drop-menu a {
+    width: 100%;
+}
+
+.profile-drop .profile-drop-menu h3 {
+    font-size: .9rem;
+    font-weight: 500;
+    color: var(--textPrimaryColor);
+    width: 100%;
+    margin: 0;
+}
+
+.profile-drop .profile-drop-menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+}
+.profile-drop .profile-drop-menu-item:hover {
+    background: var(--lightGrayColor);
+    cursor: pointer;
+}
+
+.profile-drop-header img {
+    width: 40px;
+    height: 40px;
+    border-radius: 8rem;
+}
+

@@ -1,0 +1,86 @@
+.create-dialog {
+  padding: 1rem 2rem;
+}
+
+.create-dialog h3 {
+  font-weight: 500;
+  color: var(--textLightColor);
+}
+
+.create-dialog-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.create-dialog-container .create-dialog-image {
+  width: 200px;
+  height: 200px;
+  border: 1px solid var(--grayAccent);
+  padding: 8px;
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  transition: 0.3s ease-in-out;
+}
+
+.create-dialog-image h3 {
+  color: var(--textPrimaryColor);
+  font-weight: 700;
+}
+
+.create-dialog-image:hover {
+  border: 1px solid transparent;
+  cursor: pointer;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease-in-out;
+}
+
+.create-dialog-container img {
+  width: 100%;
+  height: 80%;
+  object-fit: fill;
+}
+
+/* global modal styling */
+
+.ant-modal-content {
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.ant-modal-header {
+  padding: 1rem 2rem;
+}
+
+.ant-modal-header .ant-modal-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.ant-modal-footer {
+  display: none;
+}
+
+@media only screen and (max-width: 450px) {
+  .create-dialog {
+    padding: 8px;
+  }
+
+  .create-dialog-container .create-dialog-image {
+    margin: 0 8px;
+  }
+
+  .create-dialog-container .create-dialog-image {
+    width: 100%;
+    margin-bottom: 8px;
+    height: 220px;
+  }
+
+  .create-dialog-container h3 {
+    font-size: 0.9rem;
+  }
+}

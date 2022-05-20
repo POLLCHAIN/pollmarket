@@ -1,0 +1,67 @@
+.follow-card {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.follow-card .follow-context {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.follow-context img {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 8rem;
+}
+
+.follow-content {
+    margin-left: 1rem;
+}
+
+.follow-card .follow-content h2 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--textPrimaryColor);
+    margin: 0;
+}
+
+.follow-card .follow-content p {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--textLightColor);
+    margin: 0;
+}
+
+.follow-card button {
+    color: var(--buttonSecondaryTextColor);
+    background: var(--buttonSecondaryColor);
+    height: 40px;
+    padding: 0 2rem;
+    border-radius: 8rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 450px) {
+    .follow-context img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .follow-card .follow-content h2 {
+        font-size: 1rem;
+    }
+
+    .follow-card .follow-content p {
+        font-size: .8rem;
+    }
+
+    .follow-card button {
+        height: 35px;
+    }
+}

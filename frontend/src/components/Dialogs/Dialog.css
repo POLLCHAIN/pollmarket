@@ -1,0 +1,327 @@
+.purchase-dialog-main {
+  padding: 1rem 2rem;
+}
+
+.purchase-dialog p {
+  font-size: 1rem;
+  color: var(--grayColor);
+  font-weight: 500;
+}
+
+.purchase-dialog p > span {
+  font-weight: 700;
+  color: var(--textBlackColor);
+}
+
+.purchase-dialog-item p {
+  color: var(--textLightColor);
+  font-size: 0.9rem;
+  margin-left: 8px;
+}
+.purchase-dialog-item input {
+  border: none;
+  border-bottom: 1px solid var(--lightGrayColor);
+  background: transparent;
+  padding: 8px;
+  color: var(--textBlackColor);
+  width: 100%;
+  outline: none;
+  margin-bottom: 4px;
+  font-weight: 700;
+}
+.purchase-dialog-item {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.purchase-dialog-item.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--lightGrayColor);
+}
+
+.purchase-dialog-item.flex-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+.purchase-dialog-item h4 {
+  color: var(--textBlackColor);
+}
+.purchase-dialog-item.flex-container p {
+  margin-bottom: 0;
+}
+
+.purchase-dialog-action {
+  display: flex;
+  flex-flow: column;
+}
+
+.purchase-dialog-action button {
+  margin-top: 1rem;
+  border-radius: 8rem;
+  height: 40px;
+  border: none;
+  outline: none;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  background: var(--buttonSecondaryColor);
+  color: var(--buttonSecondaryTextColor);
+}
+
+.purchase-dialog-action .proceed-btn {
+  background: var(--buttonColor);
+  color: white;
+}
+
+.purchase-dialog-action .disabled-btn {
+  background: var(--grayAccent);
+  color: white;
+  filter: blur(0.2px);
+}
+
+.purchase-dialog-item-select {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.purchase-dialog-item-select select {
+  outline: none;
+  border: none;
+  font-weight: 700;
+  color: var(--textPrimaryColor);  
+}
+
+.purchase-dialog-item h3 {
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+  padding: 0 8px;
+  color: var(--textPrimaryColor);
+}
+
+.purchase-dialog-item h3 > span {
+  font-weight: 500;
+  color: var(--textLightColor);
+}
+
+.share-dialog {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+.report-dialog {
+  padding: 1rem 2rem;
+}
+
+.report-dialog h3 {
+  margin: 0 8px;
+  font-weight: 700;
+  color: var(--textBlackColor);
+  margin-bottom: 8px;
+}
+
+.report-dialog p {
+  margin: 0 8px;
+  font-weight: 700;
+  color: var(--textLightColor);
+  margin-bottom: 1rem;
+}
+
+.confirm-create-dialog {
+  padding: 1rem 2rem;
+}
+
+.confirm-item {
+  padding: 1rem 0;
+}
+
+.confirm-flex-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.confirm-flex-item h2 {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--textBlackColor);
+}
+
+.confirm-flex-item p {
+  margin: 0;
+}
+
+.confirm-info {
+  margin-left: 1rem;
+}
+
+.in-progress-btn {
+  width: 100%;
+  height: 40px;
+  border-radius: 8rem;
+  margin-top: 1rem;
+  border: none;
+  outline: none;
+  background: var(--lightGrayColor);
+  filter: blur(0.8px);
+  font-weight: 700;
+}
+
+.done-btn {
+  width: 100%;
+  height: 40px;
+  border-radius: 8rem;
+  margin-top: 1rem;
+  border: none;
+  outline: none;
+  background: var(--buttonSecondaryColor);
+  cursor: not-allowed;
+  font-weight: 700;
+}
+
+#my-file {
+  visibility: hidden;
+  display: none;
+}
+
+.create-coll-dialog {
+  overflow-y: scroll;  
+  padding: 1rem 1rem;
+}
+
+.create-coll-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.create-coll-top img {
+  width: 100px;
+  height: 100px;
+  border-radius: 8rem;
+}
+
+.create-coll-header {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.create-coll-upload {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.create-coll-upload button {
+  text-align: center;
+  padding: 0 12px;
+  background: var(--buttonSecondaryColor);
+  color: var(--buttonSecondaryTextColor);
+  outline: none;
+  border: none;
+  border-radius: 8rem;
+  height: 40px;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+.create-coll-header p {
+  text-align: center;
+  font-weight: 500;
+  color: var(--textLightColor);
+  text-align: left;
+}
+.create-coll-header input {
+  text-align: center;
+  padding: 0 1rem;
+  background: var(--buttonSecondaryColor);
+  color: var(--buttonSecondaryTextColor);
+  outline: none;
+  border: none;
+  border-radius: 8rem;
+  height: 40px;
+  cursor: pointer;
+}
+
+.create-coll-dialog-container {
+  padding-top: 1rem;
+}
+
+.create-coll-dialog-container input {
+  outline: none;
+}
+.create-coll-dialog-container input:active {
+  outline: none;
+  border: none;
+}
+
+.create-coll-dialog-container p {
+  margin: 0;
+  margin-left: 8px;
+}
+
+.ant-form-item-explain {
+  padding-left: 8px !important;
+  font-weight: 500;
+}
+
+.create-coll-dialog-container button {
+  width: 100%;
+  background: var(--buttonColor);
+  color: var(--textWhiteColor);
+  font-weight: 700;
+  border: none;
+  border-radius: 8rem;
+  outline: none;
+  height: 40px;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.thanks-dialog {
+  text-align: center;
+}
+
+.thanks-dialog h1 {
+  margin: 0;
+  font-weight: 700;
+  color: var(--textPrimaryColor);
+}
+
+.thanks-dialog p {
+  margin: 0;
+  font-weight: 500;
+  color: var(--textLightColor);
+  font-size: 1rem;
+}
+
+.thanks-dialog button {
+  width: 100%;
+  background: var(--buttonColor);
+  color: var(--textPrimaryColor);
+  font-weight: 700;
+  border: none;
+  border-radius: 8rem;
+  outline: none;
+  height: 40px;
+  margin: 1rem 0;
+  cursor: pointer;
+}
+
+.purchase-dialog .regular-item .regular-item-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 0;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 450px) {
+
+}

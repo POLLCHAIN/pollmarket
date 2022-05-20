@@ -1,0 +1,20 @@
+:root {
+    --textWhiteColor: #fff;
+    --backgroundWhiteColor: #ddd;
+    --textBlackColor: #000;
+    --backgroundColor: #FEFEFE;
+    --backgroundTransParentColor: rgba(150, 150, 150, 0.1);
+    --themeNormalColor: #3e2069;
+    --textLightColor: rgb(134, 134, 134);
+    --accentColor: #177ddc;
+    --primaryColor: #16419F;
+    --textPrimaryColor: #1f1f1f;
+    --lightGrayColor: #c6c6c6;
+    --grayAccent: #aaa;
+    --grayColor: #595959;
+    --buttonColor: #16419F;
+    --buttonLightColor: radial-gradient(73.62% 92.72% at 50.59% 46.59%, #16419F, #16419F 100%); 
+    --buttonSecondaryColor: #16419F; 
+    --buttonSecondaryTextColor: #fff; 
+    --foregroundColor: #ddd;
+}   

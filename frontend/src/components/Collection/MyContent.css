@@ -1,0 +1,13 @@
+.my-content {
+    width: 95%;
+    margin: 1rem auto;
+}
+.ant-tabs-nav-wrap {
+    justify-content: center;
+}
+
+.my-content-activity-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}

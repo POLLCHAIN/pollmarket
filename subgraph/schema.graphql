@@ -1,0 +1,104 @@
+type Collection @entity {
+  id: ID!
+  timestamp: BigInt!
+  txhash: String!
+  logIndex: BigInt!
+  
+  address: Bytes!
+  ownerAddress: Bytes!
+  type: String!
+  name: String!
+  uri: String!
+  isPublic: Boolean!
+}
+
+
+type Balance @entity {
+  id: ID!
+  timestamp: BigInt!
+
+  collection: Bytes!
+  tokenId: BigInt!
+  account: Bytes!
+  value: BigInt!  
+}
+
+type Item @entity {
+  id: ID!
+  timestamp: BigInt!
+  txhash: String!
+  logIndex: BigInt!
+  
+  collection: Bytes!
+  tokenId: BigInt!
+  type: String!
+  creator: Bytes!
+  uri: String!
+  supply: BigInt!
+  royalty: BigInt!
+}
+
+
+
+type Pair @entity {
+  id: ID!
+  timestamp: BigInt!
+  txhash: String!
+  logIndex: BigInt!
+  
+  collection: Bytes!
+  tokenId: BigInt!
+  pairId: BigInt!
+  type: String!
+  creator: Bytes!
+  owner: Bytes!
+  tokenAdr: Bytes!
+  balance: BigInt!
+  price: BigInt!
+  creatorFee: BigInt!
+  bValid: Boolean!
+}
+
+type Auction @entity {
+  id: ID!
+  timestamp: BigInt!
+  txhash: String!
+  logIndex: BigInt!
+  
+  collection: Bytes!
+  tokenId: BigInt!
+  auctionId: BigInt!
+  startTime: BigInt!
+  endTime: BigInt!
+  tokenAdr: Bytes!
+  startPrice: BigInt!
+  creator: Bytes!
+  owner: Bytes!
+  active: Boolean!
+}
+
+type Bid @entity {
+  id: ID!
+  timestamp: BigInt!
+  txhash: String!
+  logIndex: BigInt!
+  
+  collection: Bytes!
+  tokenId: BigInt!
+  auctionId: BigInt!
+  from: Bytes!
+  tokenAdr: Bytes!
+  bidPrice: BigInt!  
+}
+
+
+type Event @entity {
+  id: ID!
+  timestamp: BigInt!
+  
+  collection: Bytes!
+  tokenId: BigInt!
+  action: String!
+  actionAddress: Bytes!
+  params: String!
+}

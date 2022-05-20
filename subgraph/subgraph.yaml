@@ -1,0 +1,148 @@
+specVersion: 0.0.2
+description: POLL MARKET.
+repository: 
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum/contract
+    name: SingleFixed # ERC721 Fixed Price Contract
+    network: mainnet
+    source:
+      address: '0xc8dd8eaebc6c36f124c946c6a433e5f0ceab14e6'
+      abi: SingleFixed
+      startBlock: 14537048
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.4
+      language: wasm/assemblyscript
+      file: ./src/mappings/SingleFixed.ts
+      entities:
+        - Collection
+        - Pair        
+      abis:
+        - name: SingleFixed
+          file: ./abis/SingleFixed.json
+      eventHandlers:
+        - event: SingleCollectionCreated(address,address,string,string,bool)
+          handler: handleSingleCollectionCreated 
+        - event: SingleItemListed((uint256,address,uint256,address,address,address,uint256,uint256,bool))
+          handler: handleSingleItemListed
+        - event: SingleItemDelisted(address,uint256,uint256)
+          handler: handleSingleItemDelisted 
+        - event: SingleSwapped(address,(uint256,address,uint256,address,address,address,uint256,uint256,bool))
+          handler: handleSingleSwapped
+  - kind: ethereum/contract
+    name: SingleAuction #ERC721 Auction Contract
+    network: mainnet
+    source:
+      address: '0xe91d68c22a09b83ab33bbabed75f4a505b2c6546'
+      abi: SingleAuction
+      startBlock: 14537048
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.4
+      language: wasm/assemblyscript
+      file: ./src/mappings/SingleAuction.ts
+      entities:
+        - Auction
+        - Bid
+      abis:
+        - name: SingleAuction
+          file: ./abis/SingleAuction.json
+      eventHandlers:
+        - event: AuctionBidSuccess(address,(uint256,address,uint256,uint256,uint256,address,uint256,address,address,bool),uint256,uint256)
+          handler: handleAuctionBidSuccess
+        - event: AuctionCreated((uint256,address,uint256,uint256,uint256,address,uint256,address,address,bool))
+          handler: handleAuctionCreated 
+        - event: AuctionCanceled((uint256,address,uint256,uint256,uint256,address,uint256,address,address,bool))
+          handler: handleAuctionCanceled
+        - event: AuctionFinalized(address,uint256,(uint256,address,uint256,uint256,uint256,address,uint256,address,address,bool))
+          handler: handleAuctionFinalized         
+  - kind: ethereum/contract
+    name: MultipleFixed # ERC1155 Fixed Price Contract
+    network: mainnet
+    source:
+      address: '0x0cf3a5f7c25f1d69838f34b1a0e0700415fdb8ac'
+      abi: MultipleFixed
+      startBlock: 14537048
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.4
+      language: wasm/assemblyscript
+      file: ./src/mappings/MultipleFixed.ts
+      entities:
+        - Collection
+      abis:
+        - name: MultipleFixed
+          file: ./abis/MultipleFixed.json
+      eventHandlers:
+        - event: MultiCollectionCreated(address,address,string,string,bool)
+          handler: handleMultiCollectionCreated
+        - event: MultiItemListed((uint256,address,uint256,address,address,address,uint256,uint256,uint256,bool))
+          handler: handleMultiItemListed 
+        - event: MultiItemDelisted(address,uint256,uint256)
+          handler: handleMultiItemDelisted 
+        - event: MultiItemSwapped(address,uint256,uint256,(uint256,address,uint256,address,address,address,uint256,uint256,uint256,bool))
+          handler: handleMultiItemSwapped       
+templates:
+  - kind: ethereum/contract
+    name: SingleNFT # ERC721 NFT Contract 
+    network: mainnet
+    source:
+      abi: SingleNFT      
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.4
+      language: wasm/assemblyscript
+      file: ./src/mappings/SingleNFT.ts
+      entities:
+        - Item
+      abis:
+        - name: SingleNFT
+          file: ./abis/SingleNFT.json
+      eventHandlers:
+        - event: ItemCreated(uint256,address,string,uint256)
+          handler: handleItemCreated   
+        - event: CollectionUriUpdated(string)
+          handler: handleCollectionUriUpdated
+        - event: CollectionNameUpdated(string)
+          handler: handleCollectionNameUpdated
+        - event: CollectionPublicUpdated(bool)
+          handler: handleCollectionPublicUpdated
+        - event: TokenUriUpdated(uint256,string)
+          handler: handleTokenUriUpdated
+        - event: Burned(address,uint256)
+          handler: handleBurned      
+        - event: Transfer(indexed address,indexed address,indexed uint256)
+          handler: handleTransfer
+  - kind: ethereum/contract
+    name: MultipleNFT # ERC1155 NFT Contract
+    network: mainnet
+    source:
+      abi: MultipleNFT      
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.4
+      language: wasm/assemblyscript
+      file: ./src/mappings/MultipleNFT.ts
+      entities:
+        - Item
+      abis:
+        - name: MultipleNFT
+          file: ./abis/MultipleNFT.json
+      eventHandlers:
+        - event: MultiItemCreated(uint256,string,uint256,address,uint256)
+          handler: handleMultiItemCreated
+        - event: CollectionUriUpdated(string)
+          handler: handleCollectionUriUpdated
+        - event: CollectionNameUpdated(string)
+          handler: handleCollectionNameUpdated
+        - event: CollectionPublicUpdated(bool)
+          handler: handleCollectionPublicUpdated
+        - event: TokenUriUpdated(uint256,string)
+          handler: handleTokenUriUpdated
+        - event: TransferBatch(indexed address,indexed address,indexed address,uint256[],uint256[])
+          handler: handleTransferBatch
+        - event: TransferSingle(indexed address,indexed address,indexed address,uint256,uint256)
+          handler: handleTransferSingle
+    

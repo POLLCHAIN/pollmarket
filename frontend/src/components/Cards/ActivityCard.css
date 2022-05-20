@@ -1,0 +1,127 @@
+.activity-card {
+    height: 120px;
+    border: 1px solid var(--lightGrayColor);
+    border-radius: 1rem;
+    margin: 8px 0;
+    transition: .3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.activity-box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.activity-card:hover{
+    box-shadow: none;
+    transition: .3s ease-in-out;
+    background: var(--lightGrayColor);
+    border: 1px solid transparent;
+}
+
+.activity-box img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 1.5rem;
+}
+
+.activity-card .activity-icon {
+    width: 30px;
+    height: 30px;
+    margin-left: 1rem;
+}
+
+.activity-card .activity-content {
+    text-align: left;
+}
+
+.activity-content h2 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    color: var(--textPrimaryColor);
+}
+
+.activity-content h3{
+    color: var(--textLightColor);
+    font-weight: 500;
+    cursor: text;
+}
+
+.activity-content h3 > span {
+    cursor: pointer;
+    margin: 0;
+    font-weight: 700;
+    font-size: .9rem;
+    padding: 2px 8px;
+    color: var(--primaryColor);
+}
+
+.activity-content h3 .activity-creator {
+    display: inline-block;
+    cursor: pointer;
+    margin: 0;
+    font-weight: 700;
+    font-size: .8rem;
+    color: var(--primaryColor);
+    padding-right: 8px;
+    height: 28px;
+}
+
+.activity-content h3 img {
+    width: 20px;
+    height: 20px;
+    border-radius: 8rem;
+    margin-right: 8px;
+    margin-left: 8px;
+    margin-bottom: 5px;
+}
+
+.activity-content p {
+    margin: 0;
+    margin-top: 4px;
+    font-weight: 500;
+    color: var(--textLightColor);
+}
+
+@media only screen and (max-width: 450px) {
+
+    .activity-card {
+        height: auto;
+    }
+
+    .activity-content h3 {
+        margin: 0;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    .activity-content h3 .activity-creator {
+        background: none;
+        border: none;
+        height: auto;
+    }
+    .activity-content h3 > span {
+        background: none;
+        border: none;
+    }
+    .activity-box .box-preview {
+        min-width: 50px;
+        min-height: 50px;
+        object-fit: cover;
+        margin-right: 1rem;
+    }
+    
+    .activity-content h3 img {
+        width: 15px;
+        height: 15px;
+    }
+}

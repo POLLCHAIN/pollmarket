@@ -1,0 +1,35 @@
+.support-form-container {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 2rem auto;
+    text-align: left;
+}
+
+.support-form {
+    width: 50%;
+}
+
+.support-search {
+    width: 30%;
+}
+
+.support-search span {
+    border-radius: 8rem;
+    padding: 4px 8px;
+}
+
+.support-form .ant-select-selector {
+    border-radius: 8rem !important;
+    height: 40px !important;
+    padding-top: 4px !important;
+}
+
+.support-form .ant-select {
+    width: 95% !important;
+}
+
+.support-form button:hover {
+    cursor: pointer;
+}

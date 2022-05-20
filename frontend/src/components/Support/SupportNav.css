@@ -1,0 +1,34 @@
+.support-nav {
+    display: flex;   
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 70%;
+padding: 1rem 0;
+}
+
+.support-nav p{ 
+    margin: 0;
+}
+
+.support-nav-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.support-nav img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    margin-right: 8px;
+}
+
+.support-nav a {
+    font-weight: 500;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
+
+

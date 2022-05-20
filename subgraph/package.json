@@ -1,0 +1,31 @@
+{
+  "name": "pollmarket-subgraph",
+  "version": "1.0.0",
+  "repository": "",
+  "license": "GPL-3.0-or-later",
+  "scripts": {
+    "codegen": "graph codegen --output-dir src/generated/",
+    "auth": "graph auth https://api.thegraph.com/deploy/ $GRAPH_ACCESS_TOKEN",
+    "build": "graph build",
+    "deploy": "graph deploy bin0316/poll-market-mainnet --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/ --debug",
+    "create-local": "graph create --node http://127.0.0.1:8020 bsc/pollmarket",
+    "deploy-local": "graph deploy --node http://127.0.0.1:8020 --ipfs http://localhost:5001 bsc/pollmarket",
+    "remove-local": "graph remove --node http://127.0.0.1:8020 bsc/pollmarket"        
+  },
+  "devDependencies": {
+    "@amxx/graphprotocol-utils": "0.1.0",
+    "@graphprotocol/graph-cli": "^0.20.0",
+    "@graphprotocol/graph-ts": "^0.20.0",
+    "@typescript-eslint/eslint-plugin": "^2.0.0",
+    "@typescript-eslint/parser": "^2.0.0",
+    "eslint": "^6.2.2",
+    "eslint-config-prettier": "^6.1.0",
+    "prettier": "^1.18.2",
+    "typescript": "^3.5.2"
+  },
+  "dependencies": {
+    "convert-string": "^0.1.0",
+    "global": "^4.4.0",
+    "graph": "^0.2.0"
+  }
+}
