@@ -21,7 +21,7 @@ export function useAxios() {
   }, error => {
     const { status } = error.response
   
-    if (status === 401) {
+    if (status === 401 || status === 403) {
       logout(dispatch);
     }
   

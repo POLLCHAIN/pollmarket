@@ -87,7 +87,7 @@ export async function loginUser(dispatch, account, nonce, signer) {
 
 export async function logout(dispatch) {
 	dispatch({ type: 'LOGOUT' });
-	localStorage.removeItem('token');
+	localStorage.removeItem('Token');
 }
  
 
